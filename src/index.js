@@ -18,7 +18,10 @@ app.on('ready', () => {
 
   // The Main Window
   mainWindow = new BrowserWindow({width: 720, height: 600});
-
+  
+  // mainWindow = new BrowserWindow({show: false});
+  // mainWindow.maximize();
+  // mainWindow.show();
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'views/index.html'),
     protocol: 'file',
